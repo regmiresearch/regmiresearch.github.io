@@ -8,16 +8,57 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            background-color: #f4f4f4; /* Light background for contrast */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center items horizontally */
+            justify-content: center; /* Center items vertically */
+            height: 100vh; /* Full viewport height */
         }
+
         h1 {
             color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+            margin: 5px 0; /* Adjust margin for spacing */
+        }
+
+        nav {
+            margin-top: 30px; /* Space between contact info and navigation */
+        }
+
+        nav a {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
+
     <h1>Contact Us</h1>
-    <p>Email: info@researchgroup.com</p>
-    <a href="index.html">Back to Home</a>
+    <p>Email: sagarr2@illinois.edu</p>
+    <p>Phone: (123) 456-7890</p>
+    <p>Principal Investigator: Dr. Sagar Regmi</p>
+    <p>Address: 123 Research Ave, City, State, ZIP</p>
+
+    <nav>
+        <a href="index.html">Back to Home</a>
+    </nav>
+
 </body>
 </html>
