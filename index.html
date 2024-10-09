@@ -6,36 +6,74 @@
     <title>Research Group</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            text-align: center;
+            background-color: #f4f4f4;
         }
+
         header {
             background-color: #4CAF50;
             color: white;
-            padding: 20px;
-            font-size: 24px;
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
         }
+
         section {
-            margin: 20px;
+            margin: 40px auto;
+            max-width: 800px;
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+
+        section h2 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #45a049;
+        }
+
         footer {
             background-color: #333;
             color: white;
             padding: 10px;
+            text-align: center;
             position: fixed;
             width: 100%;
             bottom: 0;
-        }
-        nav a {
-            margin: 10px;
-            color: #4CAF50;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
         }
     </style>
 </head>
@@ -53,9 +91,10 @@
 
     <!-- Add Navigation Links to the New Pages -->
     <nav>
-        <a href="team.html">Team</a>
+        <a href="team.html">People</a>
         <a href="projects.html">Projects</a>
         <a href="publications.html">Publications</a>
+        <a href="teaching.html">Teaching</a>
         <a href="contact.html">Contact</a>
     </nav>
 
