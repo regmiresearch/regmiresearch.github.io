@@ -5,22 +5,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publications</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Universal Styles */
+        * {
+            box-sizing: border-box;
             margin: 0;
-            padding: 20px;
+            padding: 0;
         }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #005792;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #007EA7;
+            padding: 20px 0;
+            margin-top: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        nav a {
+            color: white;
+            background-color: #005792;
+            padding: 12px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            background-color: #003F63;
+        }
+
+        main {
+            flex: 1;
+            padding: 40px 20px;
+        }
+
         h1 {
-            color: #4CAF50;
+            color: #333;
+            font-size: 32px;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            text-align: center;
         }
+
+        ul {
+            list-style-type: none;
+            margin-bottom: 40px;
+        }
+
+        ul li {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.8;
+            padding: 5px 0;
+        }
+
+        a.back-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #005792;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        a.back-link:hover {
+            background-color: #003F63;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 10px 0;
+            }
+        }
+
+        /* Comment: Publications are formatted in Chicago style */
     </style>
 </head>
 <body>
-    <h1>Publications</h1>
-    <ul>
-        <li><a href="#">Publication 1</a></li>
-        <li><a href="#">Publication 2</a></li>
-    </ul>
-    <a href="index.html">Back to Home</a>
+
+    <header>
+        <h1>Some Selected Publications</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="team.html">People</a>
+        <a href="projects.html">Projects</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <ul>
+            <li>Huda, Md. Sanaul, Nurun Nahar, Ewumbua Monono, and Sagar Regmi. 2021. "Oil Recovery from Fractionated Dried Distillers Grains with Solubles (DDGS) Using Enzymes" <em>Processes</em> 9, no. 9: 1507. https://doi.org/10.3390/pr9091507.</li>
+            <li>Regmi, Sagar, Dilpreet Bajwa, C. Igathinathane, and Nurun Nahar. "High fiber fraction DDGS–A functional filler for manufacturing low-density particleboards." <em>Industrial Crops and Products</em> 181 (2022): 114793.</li>
+            <!-- Add more publications in the same format here -->
+        </ul>
+
+        <a href="index.html" class="back-link">Back to Home</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Regmi Research Group | Contact us: sagarr2@illinois.edu</p>
+    </footer>
+
 </body>
 </html>
