@@ -7,10 +7,11 @@
 
 /* Root Variables */
 :root {
-    --primary-color: #004080; /* Dark blue */
-    --secondary-color: #00509e; /* Medium blue */
-    --background-color: #f4f4f4; /* Light gray */
-    --text-color: #333;
+    --primary-color: #2c3e50; /* Dark Slate Blue */
+    --secondary-color: #3498db; /* Sky Blue */
+    --accent-color: #e74c3c; /* Red */
+    --background-color: #ecf0f1; /* Light Gray */
+    --text-color: #34495e; /* Dark Gray */
     --white: #fff;
     --font-family: 'Arial', sans-serif;
 }
@@ -21,24 +22,35 @@ body {
     line-height: 1.6;
     background-color: var(--background-color);
     color: var(--text-color);
+    padding: 0 15px; /* Add some padding */
 }
 
 /* Header Styles */
 header {
     background: var(--primary-color);
     color: var(--white);
-    padding: 20px 0;
+    padding: 30px 0;
     text-align: center;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
-    font-size: 2.5em;
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-transform: uppercase; /* Make the title bold */
+}
+
+header p {
+    font-size: 1.2em;
+    opacity: 0.8; /* Slightly faded for a softer look */
 }
 
 /* Navigation Styles */
 nav {
     background: var(--secondary-color);
     padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -48,18 +60,21 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: var(--white);
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    background: var(--accent-color);
+    transform: scale(1.05);
 }
 
 /* Main Content Styles */
@@ -68,16 +83,38 @@ main {
     margin: 20px auto;
     padding: 20px;
     background: var(--white);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px; /* Rounded corners */
 }
 
 main h2 {
-    font-size: 2em;
-    margin-bottom: 15px;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: var(--primary-color);
 }
 
 main p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+/* Card Styles for Projects/Research */
+.card {
+    background: var(--background-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 1.8em;
     margin-bottom: 10px;
+    color: var(--secondary-color);
+}
+
+.card p {
+    color: var(--text-color);
 }
 
 /* Footer Styles */
@@ -85,10 +122,11 @@ footer {
     background: var(--primary-color);
     color: var(--white);
     text-align: center;
-    padding: 15px 0;
+    padding: 20px 0;
     position: relative;
     bottom: 0;
     width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Responsive Design */
@@ -99,8 +137,10 @@ footer {
     }
 
     header h1 {
+        font-size: 2.5em;
+    }
+
+    main h2 {
         font-size: 2em;
     }
 }
-
-
