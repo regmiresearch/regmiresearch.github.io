@@ -37,4 +37,125 @@
             display: flex;
             justify-content: center;
             background-color: #007EA7;
-            padding
+            padding: 20px 0;
+            margin-top: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        nav a {
+            color: white;
+            background-color: #005792;
+            padding: 12px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            background-color: #003F63;
+        }
+
+        main {
+            flex: 1;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 32px;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #4CAF50;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-bottom: 40px;
+        }
+
+        ul li {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.8;
+            padding: 5px 0;
+        }
+
+        a.back-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #005792;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        a.back-link:hover {
+            background-color: #003F63;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Publications</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="team.html">People</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Recent Publications</h2>
+            <ul>
+                <li>Publication 1: Description of the recent publication.</li>
+                <li>Publication 2: Description of another recent publication.</li>
+                <li>Publication 3: Description of a notable publication.</li>
+            </ul>
+        </section>
+
+        <a href="index.html" class="back-link">Back to Home</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Regmi Research Group | Contact us: sagarr2@illinois.edu</p>
+    </footer>
+
+</body>
+</html>
