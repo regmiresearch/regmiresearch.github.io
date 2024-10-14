@@ -5,60 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Universal Styles */
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4; /* Light background for contrast */
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
             display: flex;
             flex-direction: column;
-            align-items: center; /* Center items horizontally */
-            justify-content: center; /* Center items vertically */
-            height: 100vh; /* Full viewport height */
+            min-height: 100vh;
+            padding: 0 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header {
+            background-color: #005792;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
         }
 
         h1 {
-            color: #4CAF50;
-            margin-bottom: 20px;
+            color: #333;
+            font-size: 32px;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            text-align: center;
         }
 
         p {
             font-size: 18px;
-            color: #333;
-            margin: 5px 0; /* Adjust margin for spacing */
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 10px;
         }
 
         nav {
-            margin-top: 30px; /* Space between contact info and navigation */
+            margin-top: 30px;
         }
 
         nav a {
-            background-color: #4CAF50;
+            background-color: #005792;
             color: white;
             padding: 10px 20px;
             font-size: 16px;
             font-weight: bold;
-            border-radius: 5px;
             text-decoration: none;
+            border-radius: 5px;
             transition: background-color 0.3s ease;
         }
 
         nav a:hover {
-            background-color: #45a049;
+            background-color: #003F63;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-top: auto;
+            width: 100%;
         }
     </style>
 </head>
 <body>
 
-    <h1>Contact Us</h1>
-    <p>Email: sagarr2@illinois.edu</p>
-    <p>Phone: (123) 456-7890</p>
-    <p>Principal Investigator: Dr. Sagar Regmi</p>
-    <p>Address: 123 Research Ave, City, State, ZIP</p>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <main>
+        <p>Email: sagarr2@illinois.edu</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Principal Investigator: Dr. Sagar Regmi</p>
+        <p>Address: 123 Research Ave, City, State, ZIP</p>
+    </main>
 
     <nav>
         <a href="index.html">Back to Home</a>
     </nav>
+
+    <footer>
+        <p>&copy; 2024 Regmi Research Group | Contact us: sagarr2@illinois.edu</p>
+    </footer>
 
 </body>
 </html>
