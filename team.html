@@ -5,29 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Team</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Universal Styles */
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
             display: flex;
             flex-direction: column;
+            min-height: 100vh;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #005792;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #007EA7;
+            padding: 20px 0;
+            margin-top: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        nav a {
+            color: white;
+            background-color: #005792;
+            padding: 12px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            background-color: #003F63;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            justify-content: flex-start;
-            padding: 20px;
+            padding: 40px 20px;
         }
 
         h1 {
-            color: #3BB9FF;
+            color: #333;
+            font-size: 32px;
             margin-bottom: 40px;
+            text-transform: uppercase;
         }
 
+        /* Team Section */
         .team-container {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 20px;
+            gap: 30px;
             max-width: 1200px;
             margin: auto;
+            padding: 0 20px;
         }
 
         .team-member {
@@ -36,75 +91,98 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             padding: 20px;
             text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
 
         .team-member img {
             width: 100%;
             height: auto;
-            border-radius: 50%; /* Make images circular */
-            max-width: 150px; /* Limit size of the image */
+            border-radius: 50%;
+            max-width: 150px;
             margin-bottom: 15px;
         }
 
         .team-member h3 {
             color: #333;
             margin: 10px 0;
+            font-size: 20px;
+            font-weight: bold;
         }
 
         .team-member p {
             color: #666;
             font-size: 16px;
+            margin-bottom: 10px;
         }
 
-        nav {
-            margin-top: 30px;
-        }
-
-        nav a {
-            background-color: #3BB9FF;
+        footer {
+            background-color: #333;
             color: white;
-            padding: 10px 20px;
-            font-size: 16px;
-            font-weight: bold;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
+            padding: 15px;
+            text-align: center;
+            margin-top: auto;
         }
 
-        nav a:hover {
-            background-color: #33A3E0; /* Darker shade for hover effect */
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 10px 0;
+            }
         }
     </style>
 </head>
 <body>
 
-    <h1>Our Team</h1>
-
-    <div class="team-container">
-        <div class="team-member">
-            <img src="https://github.com/regmiresearch/regmiresearch.github.io/blob/main/Images/Headshot_New.png?raw=true" alt="Member 1">
-            <h3>Dr. Sagar Regmi</h3>
-            <p>Principal Investigator</p>
-            <p>Dr. Regmi started this lab in August of 2025. Since then he has been focusing on precision ag.</p>
-        </div>
-        <div class="team-member">
-            <img src="path/to/photo2.jpg" alt="Member 2">
-            <h3>John Smith</h3>
-            <p>Postdoctoral Researcher</p>
-            <p>Specializing in machine learning applications in agriculture.</p>
-        </div>
-        <div class="team-member">
-            <img src="path/to/photo3.jpg" alt="Member 3">
-            <h3>Emily Johnson</h3>
-            <p>Graduate Student</p>
-            <p>Researching soil health and crop yield improvement techniques.</p>
-        </div>
-        <!-- Add more team members as needed -->
-    </div>
+    <header>
+        <h1>Our Team</h1>
+    </header>
 
     <nav>
-        <a href="index.html">Back to Home</a>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="contact.html">Contact</a>
     </nav>
+
+    <main>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="https://github.com/regmiresearch/regmiresearch.github.io/blob/main/Images/Headshot_New.png?raw=true" alt="Member 1">
+                <h3>Dr. Sagar Regmi</h3>
+                <p>Principal Investigator</p>
+                <p>Dr. Regmi started this lab in August of 2025. Since then, he has been focusing on precision agriculture and sustainable technologies.</p>
+            </div>
+            <!--  This section is commented and will add later on 
+            <div class="team-member">
+                <img src="path/to/photo2.jpg" alt="Member 2">
+                <h3>John Smith</h3>
+                <p>Postdoctoral Researcher</p>
+                <p>Specializing in machine learning applications in agriculture.</p>
+            </div>
+            <div class="team-member">
+                <img src="path/to/photo3.jpg" alt="Member 3">
+                <h3>Emily Johnson</h3>
+                <p>Graduate Student</p>
+                <p>Researching soil health and crop yield improvement techniques.</p>
+            </div>
+            -->
+            <!-- Add more team members as needed -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Regmi Research Group | Contact us: sagarr2@illinois.edu</p>
+    </footer>
 
 </body>
 </html>
