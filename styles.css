@@ -23,6 +23,9 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     padding: 0 15px; /* Add some padding */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure full-height layout */
 }
 
 /* Header Styles */
@@ -88,6 +91,7 @@ main {
     background: var(--white);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px; /* Rounded corners */
+    flex: 1; /* Allow main content to stretch and push footer down */
 }
 
 main h2 {
@@ -99,6 +103,14 @@ main h2 {
 main p {
     margin-bottom: 15px;
     line-height: 1.7;
+}
+
+/* Responsive Image Styles */
+img {
+    max-width: 100%; /* Ensure image does not exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 10px auto; /* Center images with some space */
 }
 
 /* Card Styles for Projects/Research */
@@ -130,6 +142,7 @@ footer {
     bottom: 0;
     width: 100%;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    margin-top: auto; /* Push footer to the bottom */
 }
 
 /* Responsive Design */
@@ -146,4 +159,9 @@ footer {
     main h2 {
         font-size: 2em;
     }
-}
+
+    nav ul li {
+        flex: none; /* Allow nav items to stack neatly */
+    }
+
+    .card
